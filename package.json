@@ -1,0 +1,33 @@
+{
+  "name": "vitest-broadcast-channel-mock",
+  "version": "0.1.0",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.31.1"
+  },
+  "peerDependencies": {
+    "vitest": "^0.31.1"
+  }
+}
